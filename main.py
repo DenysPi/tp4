@@ -24,6 +24,8 @@ class Monde:
     def getCoefCarte(self, i, j):
         return self.carte[i][j]
 
+    
+
 class Mouton:
     def __init__(self, gain_nourriture, position, taux_reproduction, monde)
     self.gain_nourriture = 4
@@ -70,8 +72,11 @@ class Simulation:
         self.nombre_moutons = nombre_moutons
         self.horloge = 0
         self.monde = Monde()
-        self.moutons = [Mouton(4, (random.randint(for i in range(2))), 4, Monde()) for mouton in range(self.nombre_moutons)]
-
+        self.moutons = [Mouton(4, (random.randint(0,50) for i in range(2)), 4, Monde()) for mouton in range(self.nombre_moutons)]
+        self.fin_du_monde = 5000
+        self.monde = monde
+        self.resultat_herbe = self.monde.carte
+    def
 
 
 
